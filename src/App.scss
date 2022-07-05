@@ -1,0 +1,95 @@
+.grid{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto auto ;
+   z-index: -1;
+}
+.poppup{
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.container{
+    margin: 6px auto;
+   background-color: rgb(56, 59, 61);
+   color: white;
+   width: 60%;
+   height: 30vh;
+   border: 20px solid rgb(18, 19, 18);
+   opacity: 0.8;
+   &:hover{
+    cursor: pointer;
+    background-color: rgb(75, 3, 3);
+   }
+   .main{
+     margin-top: 10px;
+       display: flex;
+       justify-content: space-around;
+       flex-direction: row;
+       align-items: center;
+       .photo{
+           width: 170px;
+           height: 175px;
+           border-radius: 50%;
+           border: 3px solid white;
+       }
+     }
+     }
+.modalwrapper{
+    border: 10px solid rgb(161, 146, 5);
+
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 7rem auto;
+    background-color: rgb(75, 3, 3);
+    color: white;
+   
+    .button{
+        width: 24px;
+        height: 27px;
+        background-color: white;
+        color: green;
+        font-size: large;
+        font-weight: bold;
+        padding: 4px 4px;
+        &:hover{
+            color: white;
+            background-color: green;
+            cursor: pointer;
+        }
+    }
+    .modal{
+        width: 100%;
+        height: 40vh;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        div{
+            margin-left: 10px;
+        }
+     }
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+  }
+  .nav h4{
+    font-size: 30px;
+    font-weight: bolder;
+  }
+     
